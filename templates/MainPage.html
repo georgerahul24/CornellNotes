@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Cornote</title>
+    <link rel="stylesheet" href="{% static 'css/MainPagestyles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="/home"><img src="{% static 'images/MainPageBackground.jpg' %}"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">{{ profile.name }}</a></li>
+                <li><a href="">FEEDBACK</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="text-box">
+        <h1>Welcome To Cornote</h1>
+        <p>The ultimate Cornell Note Taking companion, streamlining learning and capturing knowledge<br> effortlessly
+            with intuitive sectioning for improved retention and comprehension.
+        </p>
+    </div>
+
+
+</section>
+<!------ Features ------>
+<section class="features">
+    <h1>Features</h1>
+    <p>Discover the Power of Efficient Note-Taking with Cornote</p>
+
+    <div class="row">
+        <div class="features-col">
+            <h3>Customizable Templates</h3>
+            <p>Offers a wide range of customizable note templates, including the classic Cornell note layout, making it
+                easy to adapt your note-taking style to your preferences.
+            </p>
+        </div>
+        <div class="features-col">
+            <h3>Tagging</h3>
+            <p>With our tagging features, you can assign labels to specific sections, topics, or subjects, enabling
+                efficient retrieval of information during revisions or research.
+            </p>
+        </div>
+        <div class="features-col">
+            <h3>Intuitive Navigation</h3>
+            <p>A well-organized layout, clear menu structures, and easily accessible buttons ensure users can find what
+                they need without confusion or frustration.
+            </p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
