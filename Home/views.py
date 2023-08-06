@@ -5,12 +5,14 @@ from django.template import loader
 
 
 class Profile:
-    name = "Rahul"
+    name = "LOGIN"
 
 
 class Home(View):
     def get(self, request):
         profile = Profile()
+
+
         template = loader.get_template('MainPage.html')
         context = {
             'profile': profile,
