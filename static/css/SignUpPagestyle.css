@@ -79,6 +79,17 @@ form p a{
    display: center;
 }
 
+
+
+input[type=button]{
+
+   width: 100%;													           background: rgb(92, 49, 4);												   color: #fff;													           height: 40px;
+   border-radius: 15px;          											   border: 0;														   outline: 0;  												           cursor: pointer;													   transition: background 1s;    											}                    												        .input-group {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                              height: 240px;
+}
+
 .btn-field button{
    width: 100%;													           background: rgb(92, 49, 4);												   color: #fff;													           height: 40px;                     
-   border-radius: 15px;          											   border: 0;														   outline: 0;  												           cursor: pointer;													   transition: background 1s;    											}                    												        .input-group{                       								                           height: 240px;                                           								}
+   border-radius: 15px;          											   border: 0;														   outline: 0;  												           cursor: pointer;													   transition: background 1s;    											}                    												        .input-group {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                              height: 240px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                           }

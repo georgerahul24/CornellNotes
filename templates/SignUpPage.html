@@ -2,24 +2,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
     <title>Sign In and Sign Up Form - Easy Tutorials</title>
-    <link rel="stylesheet" href="{% static 'css/SignUpPagestyle.css' %}">
+    <link rel = "stylesheet" href = "{% static 'css/SignUpPagestyle.css' %}">
     <script src="https://kit.fontawesome.com/be107114f4.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 <div class="container">
     <div class="form-box">
-        <h1>Sign Up</h1>
-        <form action="/SignUp/" action="post">
-            {% csrf_token %}
-            <table>
-                {{ f }}
-            </table>
-        </form>
-    </div>
-</div>
+         <h1>Sign Up</h1>
+         <form method="post" action="">
+             {% csrf_token %}
+             <div class = "input-group">
+                 <div class = "input-field">
 
+                      <i class="fa-solid fa-user"></i>
+                     <label for="id_name"></label>
+                      <input type="text" name="name" placeholder="Name" maxLength="50" required_id="id_name">
+                 </div>
+
+		 <div class = "input-field">
+ 		      <i class="fa-solid fa-envelope"></i>
+             <label for="id_email"></label>
+		      <input type="email" name="email" placeholder="Email" maxLength="50" required_id="id_email">
+	         </div>
+
+		 <div class = "input-field">
+		      <i class="fa-solid fa-lock"></i>
+             <label for="id_password"></label>
+		      <input type="password" name="password" placeholder="Password" id="id_password">
+	         </div>
+                 <p>Already have an account? <a href='#'>Log In</a></p>
+	     </div>
+	     <div class="btn-field">
+             <button type="submit" value="" id="signupBtn"> Create Account </button>
+
+	     </div>
+         </form>
+      </div>
+   </div>
 </body>
 </html>
