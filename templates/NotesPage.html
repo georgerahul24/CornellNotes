@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cornell Note Home Page</title>
+    <link rel="stylesheet" href="{% static 'css/NotesPageStyles.css' %}">
+    <!-- Add more tool logos here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="toolbar">
+        <button><i class="fas fa-pen"></i>Edit</button>
+        <button><i class="fas fa-search"></i>Search</button>
+        <button><i class="fas fa-file-alt"></i>Templates</button>
+        <button><i class="fas fa-user-circle"></i>Profile</button>
+        <!-- Additional tool buttons with logos -->
+        <button><i class="fas fa-plus"></i>Add Tool 1</button>
+        <button><i class="fas fa-toolbox"></i>Add Tool 2</button>
+        <button><i class="fas fa-calendar-alt"></i>Calendar</button>
+        <button><i class="fas fa-tasks"></i>Tasks</button>
+        <button><i class="fas fa-link"></i>Links</button>
+        <!-- Font Family Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fas fa-font"></i>Font Family</button>
+            <div class="dropdown-content">
+                <a href="#">Arial</a>
+                <a href="#">Helvetica</a>
+                <a href="#">Times New Roman</a>
+                <a href="#">Georgia</a>
+                <!-- Add more font options as needed -->
+            </div>
+        </div>
+        <!-- Font Size Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fas fa-text-height"></i>Font Size</button>
+            <div class="dropdown-content">
+                <a href="#">Small</a>
+                <a href="#">Medium</a>
+                <a href="#">Large</a>
+                <!-- Add more font size options as needed -->
+            </div>
+        </div>
+        <!-- Bold Text Button -->
+        <button><i class="fas fa-bold"></i>Bold</button>
+        <!-- Italic Text Button -->
+        <button><i class="fas fa-italic"></i>Italic</button>
+        <!-- Underline Text Button -->
+        <button><i class="fas fa-underline"></i>Underline</button>
+        <!-- Text Alignment Buttons -->
+        <button><i class="fas fa-align-left"></i>Left</button>
+        <button><i class="fas fa-align-center"></i>Center</button>
+        <button><i class="fas fa-align-right"></i>Right</button>
+        <!-- Text Color Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fas fa-paint-brush"></i>Text Color</button>
+            <div class="dropdown-content">
+                <a href="#">Black</a>
+                <a href="#">Red</a>
+                <a href="#">Blue</a>
+                <a href="#">Green</a>
+                <!-- Add more color options as needed -->
+            </div>
+        </div>
+        <!-- Bullet List Button -->
+        <button><i class="fas fa-list-ul"></i>Bullet List</button>
+    </div>
+
+    <div class="container">
+        <div id="left-column">
+            <h2>Cornell Notes</h2>
+            <ul>
+                <li><a href="#">View Notes</a></li>
+                <li><a href="#">Search Templates</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+        <div id="main-content">
+            <div class="note-sheet">
+                <!-- Cornell note template goes here -->
+                <div class="section">
+                    <label>Date:</label>
+                    <input type="text" placeholder="Enter date">
+                </div>
+                <div class="section">
+                    <label>Title:</label>
+                    <input type="text" placeholder="Enter title">
+                </div>
+                <div class="section">
+                    <label>Keyword:</label>
+                    <input type="text" placeholder="Enter keywords">
+                </div>
+                <div class="section">
+                    <label>Notes:</label>
+                    <textarea rows="10" placeholder="Enter your notes"></textarea>
+                </div>
+                <div class="section">
+                    <label>Summary:</label>
+                    <textarea rows="5" placeholder="Enter summary"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

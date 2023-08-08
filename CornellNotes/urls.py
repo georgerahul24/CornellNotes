@@ -20,6 +20,7 @@ from Home.views import Home
 from SignUp.views import SignUp, SignOut
 from Login.views import Login
 from About.views import About
+from Notes.views import Notes
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,6 +29,7 @@ urlpatterns = [
     path('SignUp/', SignUp.as_view(), name='SignUp'),
     path('LogOut/', SignOut.as_view(), name="LogOut"),
     path('LogIn/', Login.as_view(), name="LogIn"),
-    path('About/', About.as_view(),name="About"),
+    path('About/', About.as_view(), name="About"),
+    path('Notes/', Notes.as_view(), name="Notes")
 
 ]
