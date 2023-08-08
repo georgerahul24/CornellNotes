@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - Easy Tutorials</title>
+    <link rel="stylesheet" href="{% static 'css/LogInstyles.css' %}">
+    <script src="https://kit.fontawesome.com/be107114f4.js" crossorigin="anonymous"></script>
+    <style>
+        /* Custom CSS for spacing */
+        .form-box p {
+            margin-bottom: 10px; /* Add margin between paragraphs (Create Account and Log In button) */
+        }
+
+        .btn-field {
+            margin-top: 10px; /* Reduced margin between the "Create Account" and "Log In" button */
+        }
+
+        .create-account {
+            margin-top: 10px; /* Add margin between the "Create Account" link and the button */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="form-box">
+        <h1>Login</h1>
+        <form method="post" action="">
+            {% csrf_token %}
+            <div class="input-group">
+                <div class="input-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="name" placeholder="Username" maxLength="50" required_id="id_name">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password" id="id_password">
+                </div>
+            </div>
+            <div class="btn-field">
+                <button type="submit" value="" id="loginBtn">Log In</button>
+            </div>
+        </form>
+        <p class="create-account">Don't have an account? <a href={% url 'SignUp' %}>Create Account</a></p>
+    </div>
+</div>
+</body>
+</html>

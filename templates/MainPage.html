@@ -18,8 +18,9 @@
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
-                <li><a href="">{{ profile.name }}</a></li>
+                <li><a href="{% url 'LogIn' %}">{{ profile.name }}</a></li>
                 <li><a href="">FEEDBACK</a></li>
+                <li><a href="{% url 'LogOut' %}">LOG OUT</a></li>
             </ul>
         </div>
     </nav>
