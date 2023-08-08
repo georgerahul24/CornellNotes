@@ -28,7 +28,6 @@ class Login(View):
                 login(request, user)
                 return Home.as_view()(self.request)
             else:
-                return HttpResponse(
-                    "User Not Found" + form.cleaned_data["email"] + make_password(form.cleaned_data["password"]))
+                return Home.as_view()(self.request)
 
         return HttpResponse("Form not valid")

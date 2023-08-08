@@ -19,6 +19,7 @@ from django.urls import path
 from Home.views import Home
 from SignUp.views import SignUp, SignOut
 from Login.views import Login
+from About.views import About
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,6 +28,6 @@ urlpatterns = [
     path('SignUp/', SignUp.as_view(), name='SignUp'),
     path('LogOut/', SignOut.as_view(), name="LogOut"),
     path('LogIn/', Login.as_view(), name="LogIn"),
-
+    path('About/', About.as_view(),name="About"),
 
 ]
